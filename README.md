@@ -4,7 +4,20 @@
 So far this project provides two main scripts:
 
 data_collection.py: Downloads and organizes F1 qualifying data into CSV files for each year specified (since 2018)
-- to run: `python main.py --years 2021 2022 --cache-dir f1_cache --output-dir f1_data` (only include --cache-dir or --output-dir if you do not want to use default names)
+
+the script allows you to specify several options:
+
+--years (Required): A list of years to fetch data for (e.g., 2021 2022 2023).
+--cache-dir: Directory for FastF1's cache (default: f1_cache).
+--output-dir: Directory to save fetched data (default: data/original_data).
+--reload: Whether to reload existing data (default: False).
+
+- to run: `python fetch_data.py \
+  --years 2020 2021 2022 2023 \
+  --cache-dir custom_cache \
+  --output-dir custom_output_dir \
+  --reload True
+` 
 
 data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
 - to run: `python data_cleaning.py`
