@@ -15,7 +15,13 @@ the script allows you to specify several options:
 - to run: `python fetch_data.py --years 2020 2021 2022 2023 --cache-dir custom_cache --output-dir custom_output_dir --reload True` 
 
 data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
-- to run: `python data_cleaning.py`
+
+The script allows you to specify options such as input and output directories:
+
+--input-dir: Directory containing raw data files to be cleaned (default: data/original_data).
+--output-dir: Directory where the cleaned data will be saved (default: data).
+
+- to run: `python clean_data.py --input-dir data/original_data --output-dir data/cleaned_data`
 
 For my final project I plan to focus on track-based and driver-based qualifying performance, but I need to work further on the code for this 
 
