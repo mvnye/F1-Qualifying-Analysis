@@ -23,9 +23,10 @@ class F1DataFetcher:
         self.output_dir = Path(output_dir)
         self.reload = reload
         
-        # Create directories
-        self.cache_dir.mkdir(exist_ok=True)
-        self.output_dir.mkdir(exist_ok=True)
+        # Create directories with parent directories if needed
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+
         
         # Setup logging
         self._setup_logging()
