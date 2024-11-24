@@ -4,8 +4,7 @@
 So far this project provides two main scripts:
 
 data_collection.py: Downloads and organizes F1 qualifying data into CSV files for each year specified (since 2018)
-- to run: `python data_collection.py --years 2018 2019 2020 2021`
-
+- to run: `python main.py --years 2021 2022 --cache-dir f1_cache --output-dir f1_data` (only include --cache-dir or --output-dir if you do not want to use default names)
 
 data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
 - to run: `python data_cleaning.py`
