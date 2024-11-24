@@ -3,7 +3,7 @@
 
 So far this project provides two main scripts:
 
-##data_collection.py: Downloads and organizes F1 qualifying data into CSV files for each year specified (since 2018)
+## data_collection.py: Downloads and organizes F1 qualifying data into CSV files for each year specified (since 2018)
 
 the script allows you to specify several options:
 
@@ -14,7 +14,7 @@ the script allows you to specify several options:
 
 - to run: `python fetch_data.py --years 2020 2021 2022 2023 --cache-dir custom_cache --output-dir custom_output_dir --reload True` 
 
-##data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
+## data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
 
 The script allows you to specify options such as input and output directories:
 
