@@ -15,16 +15,17 @@ For my final project I plan to focus on track-based and driver-based qualifying 
 1. Track-Specific Performance Analysis
 Using FastF1's track metadata, we examine how circuit characteristics shape qualifying performance by:
 
-Analyzing historical best lap times at each circuit
-Identifying correlations between track features and qualifying times
-Identifying which drivers excel at specific track types
-Determining patterns in track-specific performance
+- Analyzing historical best lap times at each circuit
+- Identifying correlations between track features and qualifying times
+- Identifying which drivers excel at specific track types
+- Determining patterns in track-specific performance
 
 2. Driver Evolution Study
 Track drivers' qualifying performance trajectories by:
 
-Mapping performance changes throughout their F1 careers
-Analyzing the possible impact of team transitions on qualifying results
-Identifying periods of peak, and not so peak, performance
-Comparing performance trends across different career stages
+- Mapping performance changes throughout their F1 careers
+- Analyzing the possible impact of team transitions on qualifying results
+- Identifying periods of peak, and not so peak, performance
+- Comparing performance trends across different career stages
 
+For more information about project goals, motivations, and background, see `ProjectProposal.pdf`
