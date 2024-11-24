@@ -1,7 +1,7 @@
 # F1-Qualifying-Ananlysis
 
 
-So far this project provides two scripts:
+So far this project provides two main scripts:
 
 data_collection.py: Downloads and organizes F1 qualifying data into CSV files for each year specified (since 2018)
 - to run: `python data_collection.py --years 2018 2019 2020 2021`
@@ -29,3 +29,5 @@ Track drivers' qualifying performance trajectories by:
 - Comparing performance trends across different career stages
 
 For more information about project goals, motivations, and background, see `ProjectProposal.pdf`
+
+Dependencies can be installed with `pip install -r requirements.txt`
