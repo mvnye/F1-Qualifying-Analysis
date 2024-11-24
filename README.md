@@ -10,7 +10,7 @@ data_collection.py: Downloads and organizes F1 qualifying data into CSV files fo
 data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
 - to run: `python data_cleaning.py`
 
-For the final project I plan to focus on two key areas of qualifying performance: 
+For my final project I plan to focus on track-based and driver-based qualifying performance, but I need to work further on the code for this 
 
 1. Track-Specific Performance Analysis
 Using FastF1's track metadata, we examine how circuit characteristics shape qualifying performance by:
@@ -27,3 +27,4 @@ Mapping performance changes throughout their F1 careers
 Analyzing the possible impact of team transitions on qualifying results
 Identifying periods of peak, and not so peak, performance
 Comparing performance trends across different career stages
+
