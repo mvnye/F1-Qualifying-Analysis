@@ -7,7 +7,7 @@ So far this project provides two main scripts:
 
 Downloads and organizes F1 qualifying data into CSV files for each year specified (since 2018)
 
-the script allows you to specify several options:
+The script allows you to specify several options:
 
 --years (Required): A list of years to fetch data for (e.g., 2021 2022 2023).
 --cache-dir: Directory for FastF1's cache (default: f1_cache).
