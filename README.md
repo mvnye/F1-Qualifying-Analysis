@@ -12,12 +12,7 @@ the script allows you to specify several options:
 --output-dir: Directory to save fetched data (default: data/original_data).
 --reload: Whether to reload existing data (default: False).
 
-- to run: `python fetch_data.py \
-  --years 2020 2021 2022 2023 \
-  --cache-dir custom_cache \
-  --output-dir custom_output_dir \
-  --reload True
-` 
+- to run: `python fetch_data.py --years 2020 2021 2022 2023 --cache-dir custom_cache --output-dir custom_output_dir --reload True` 
 
 data_cleaning.py: Processes and combines the collected data into a comprehensive dataset
 - to run: `python data_cleaning.py`
