@@ -1,5 +1,4 @@
 fastf1
 pandas
 tqdm
-argparse
 python-dateutil
