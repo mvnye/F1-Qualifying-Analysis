@@ -37,7 +37,7 @@ There is example data in the data and original_data folders.
 
 ## Goals
 
-For my final project I plan to focus on track-based and driver-based qualifying performance, but I need to work further on the code for this. 
+For my final project I plan to focus on track-based and driver-based qualifying performance, I am currently working on code to obtain the track data.  
 
 1. Track-Specific Performance Analysis
 Using FastF1's track metadata, we examine how circuit characteristics shape qualifying performance by:
