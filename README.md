@@ -1,5 +1,7 @@
 # F1-Qualifying-Ananlysis
 
+Dependencies can be installed with `pip install -r requirements.txt`
+
 
 So far this project provides two main scripts:
 
@@ -31,7 +33,8 @@ The script allows you to specify options such as input and output directories:
 
 - to run: `python clean_data.py --input-dir data/original_data --output-dir data/cleaned_data`
 
-For my final project I plan to focus on track-based and driver-based qualifying performance, but I need to work further on the code for this 
+
+There is example data in the data and original_data folders. For my final project I plan to focus on track-based and driver-based qualifying performance, but I need to work further on the code for this. 
 
 1. Track-Specific Performance Analysis
 Using FastF1's track metadata, we examine how circuit characteristics shape qualifying performance by:
@@ -51,4 +54,4 @@ Track drivers' qualifying performance trajectories by:
 
 For more information about project goals, motivations, and background, see `ProjectProposal.pdf`
 
-Dependencies can be installed with `pip install -r requirements.txt`
+
