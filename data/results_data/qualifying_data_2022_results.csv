@@ -1,0 +1,281 @@
+DriverNumber,BroadcastName,TeamName,Position,Q1,Q2,Q3,Year,EventName,WetSession
+16,C LECLERC,Ferrari,1.0,0 days 00:01:31.471000,0 days 00:01:30.932000,0 days 00:01:30.558000,2022,Bahrain Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,2.0,0 days 00:01:31.785000,0 days 00:01:30.757000,0 days 00:01:30.681000,2022,Bahrain Grand Prix,False
+55,C SAINZ,Ferrari,3.0,0 days 00:01:31.567000,0 days 00:01:30.787000,0 days 00:01:30.687000,2022,Bahrain Grand Prix,False
+11,S PEREZ,Red Bull Racing,4.0,0 days 00:01:32.311000,0 days 00:01:31.008000,0 days 00:01:30.921000,2022,Bahrain Grand Prix,False
+44,L HAMILTON,Mercedes,5.0,0 days 00:01:32.285000,0 days 00:01:31.048000,0 days 00:01:31.238000,2022,Bahrain Grand Prix,False
+77,V BOTTAS,Alfa Romeo,6.0,0 days 00:01:31.919000,0 days 00:01:31.717000,0 days 00:01:31.560000,2022,Bahrain Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,7.0,0 days 00:01:31.955000,0 days 00:01:31.461000,0 days 00:01:31.808000,2022,Bahrain Grand Prix,False
+14,F ALONSO,Alpine,8.0,0 days 00:01:32.346000,0 days 00:01:31.621000,0 days 00:01:32.195000,2022,Bahrain Grand Prix,False
+63,G RUSSELL,Mercedes,9.0,0 days 00:01:32.269000,0 days 00:01:31.252000,0 days 00:01:32.216000,2022,Bahrain Grand Prix,False
+10,P GASLY,AlphaTauri,10.0,0 days 00:01:32.096000,0 days 00:01:31.635000,0 days 00:01:32.338000,2022,Bahrain Grand Prix,False
+31,E OCON,Alpine,11.0,0 days 00:01:32.041000,0 days 00:01:31.782000,,2022,Bahrain Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,12.0,0 days 00:01:32.380000,0 days 00:01:31.998000,,2022,Bahrain Grand Prix,False
+4,L NORRIS,McLaren,13.0,0 days 00:01:32.239000,0 days 00:01:32.008000,,2022,Bahrain Grand Prix,False
+23,A ALBON,Williams,14.0,0 days 00:01:32.726000,0 days 00:01:32.664000,,2022,Bahrain Grand Prix,False
+24,G ZHOU,Alfa Romeo,15.0,0 days 00:01:32.493000,0 days 00:01:33.543000,,2022,Bahrain Grand Prix,False
+22,Y TSUNODA,AlphaTauri,16.0,0 days 00:01:32.750000,,,2022,Bahrain Grand Prix,False
+27,N HULKENBERG,Aston Martin,17.0,0 days 00:01:32.777000,,,2022,Bahrain Grand Prix,False
+3,D RICCIARDO,McLaren,18.0,0 days 00:01:32.945000,,,2022,Bahrain Grand Prix,False
+18,L STROLL,Aston Martin,19.0,0 days 00:01:33.032000,,,2022,Bahrain Grand Prix,False
+6,N LATIFI,Williams,20.0,0 days 00:01:33.634000,,,2022,Bahrain Grand Prix,False
+11,S PEREZ,Red Bull Racing,1.0,0 days 00:01:29.705000,0 days 00:01:28.924000,0 days 00:01:28.200000,2022,Saudi Arabian Grand Prix,False
+16,C LECLERC,Ferrari,2.0,0 days 00:01:29.039000,0 days 00:01:28.780000,0 days 00:01:28.225000,2022,Saudi Arabian Grand Prix,False
+55,C SAINZ,Ferrari,3.0,0 days 00:01:28.855000,0 days 00:01:28.686000,0 days 00:01:28.402000,2022,Saudi Arabian Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,4.0,0 days 00:01:28.928000,0 days 00:01:28.945000,0 days 00:01:28.461000,2022,Saudi Arabian Grand Prix,False
+31,E OCON,Alpine,5.0,0 days 00:01:30.093000,0 days 00:01:29.584000,0 days 00:01:29.068000,2022,Saudi Arabian Grand Prix,False
+63,G RUSSELL,Mercedes,6.0,0 days 00:01:29.680000,0 days 00:01:29.618000,0 days 00:01:29.104000,2022,Saudi Arabian Grand Prix,False
+14,F ALONSO,Alpine,7.0,0 days 00:01:29.978000,0 days 00:01:29.295000,0 days 00:01:29.147000,2022,Saudi Arabian Grand Prix,False
+77,V BOTTAS,Alfa Romeo,8.0,0 days 00:01:29.683000,0 days 00:01:29.404000,0 days 00:01:29.183000,2022,Saudi Arabian Grand Prix,False
+10,P GASLY,AlphaTauri,9.0,0 days 00:01:29.891000,0 days 00:01:29.418000,0 days 00:01:29.254000,2022,Saudi Arabian Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,10.0,0 days 00:01:29.831000,0 days 00:01:29.546000,0 days 00:01:29.588000,2022,Saudi Arabian Grand Prix,False
+4,L NORRIS,McLaren,11.0,0 days 00:01:29.957000,0 days 00:01:29.651000,,2022,Saudi Arabian Grand Prix,False
+3,D RICCIARDO,McLaren,12.0,0 days 00:01:30.009000,0 days 00:01:29.773000,,2022,Saudi Arabian Grand Prix,False
+24,G ZHOU,Alfa Romeo,13.0,0 days 00:01:29.978000,0 days 00:01:29.819000,,2022,Saudi Arabian Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,14.0,0 days 00:01:30.167000,0 days 00:01:29.920000,,2022,Saudi Arabian Grand Prix,False
+18,L STROLL,Aston Martin,15.0,0 days 00:01:30.256000,0 days 00:01:31.009000,,2022,Saudi Arabian Grand Prix,False
+44,L HAMILTON,Mercedes,16.0,0 days 00:01:30.343000,,,2022,Saudi Arabian Grand Prix,False
+23,A ALBON,Williams,17.0,0 days 00:01:30.492000,,,2022,Saudi Arabian Grand Prix,False
+27,N HULKENBERG,Aston Martin,18.0,0 days 00:01:30.543000,,,2022,Saudi Arabian Grand Prix,False
+6,N LATIFI,Williams,19.0,0 days 00:01:31.817000,,,2022,Saudi Arabian Grand Prix,False
+22,Y TSUNODA,AlphaTauri,20.0,,,,2022,Saudi Arabian Grand Prix,False
+16,C LECLERC,Ferrari,1.0,0 days 00:01:18.881000,0 days 00:01:18.606000,0 days 00:01:17.868000,2022,Australian Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,2.0,0 days 00:01:18.580000,0 days 00:01:18.611000,0 days 00:01:18.154000,2022,Australian Grand Prix,False
+11,S PEREZ,Red Bull Racing,3.0,0 days 00:01:18.834000,0 days 00:01:18.340000,0 days 00:01:18.240000,2022,Australian Grand Prix,False
+4,L NORRIS,McLaren,4.0,0 days 00:01:19.280000,0 days 00:01:19.066000,0 days 00:01:18.703000,2022,Australian Grand Prix,False
+44,L HAMILTON,Mercedes,5.0,0 days 00:01:19.401000,0 days 00:01:19.106000,0 days 00:01:18.825000,2022,Australian Grand Prix,False
+63,G RUSSELL,Mercedes,6.0,0 days 00:01:19.405000,0 days 00:01:19.076000,0 days 00:01:18.933000,2022,Australian Grand Prix,False
+3,D RICCIARDO,McLaren,7.0,0 days 00:01:19.665000,0 days 00:01:19.130000,0 days 00:01:19.032000,2022,Australian Grand Prix,False
+31,E OCON,Alpine,8.0,0 days 00:01:19.605000,0 days 00:01:19.136000,0 days 00:01:19.061000,2022,Australian Grand Prix,False
+55,C SAINZ,Ferrari,9.0,0 days 00:01:18.983000,0 days 00:01:18.469000,0 days 00:01:19.408000,2022,Australian Grand Prix,False
+14,F ALONSO,Alpine,10.0,0 days 00:01:19.192000,0 days 00:01:18.815000,,2022,Australian Grand Prix,False
+10,P GASLY,AlphaTauri,11.0,0 days 00:01:19.580000,0 days 00:01:19.226000,,2022,Australian Grand Prix,False
+77,V BOTTAS,Alfa Romeo,12.0,0 days 00:01:19.251000,0 days 00:01:19.410000,,2022,Australian Grand Prix,False
+22,Y TSUNODA,AlphaTauri,13.0,0 days 00:01:19.742000,0 days 00:01:19.424000,,2022,Australian Grand Prix,False
+24,G ZHOU,Alfa Romeo,14.0,0 days 00:01:19.910000,0 days 00:01:20.155000,,2022,Australian Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,15.0,0 days 00:01:20.104000,0 days 00:01:20.465000,,2022,Australian Grand Prix,False
+23,A ALBON,Williams,16.0,0 days 00:01:20.135000,,,2022,Australian Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,17.0,0 days 00:01:20.254000,,,2022,Australian Grand Prix,False
+5,S VETTEL,Aston Martin,18.0,0 days 00:01:21.149000,,,2022,Australian Grand Prix,False
+6,N LATIFI,Williams,19.0,0 days 00:01:21.372000,,,2022,Australian Grand Prix,False
+18,L STROLL,Aston Martin,20.0,,,,2022,Australian Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,1.0,0 days 00:01:19.295000,0 days 00:01:18.793000,0 days 00:01:27.999000,2022,Emilia Romagna Grand Prix,False
+16,C LECLERC,Ferrari,2.0,0 days 00:01:18.796000,0 days 00:01:19.584000,0 days 00:01:28.778000,2022,Emilia Romagna Grand Prix,False
+4,L NORRIS,McLaren,3.0,0 days 00:01:20.168000,0 days 00:01:19.294000,0 days 00:01:29.131000,2022,Emilia Romagna Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,4.0,0 days 00:01:20.147000,0 days 00:01:19.902000,0 days 00:01:29.164000,2022,Emilia Romagna Grand Prix,False
+14,F ALONSO,Alpine,5.0,0 days 00:01:20.198000,0 days 00:01:19.595000,0 days 00:01:29.202000,2022,Emilia Romagna Grand Prix,False
+3,D RICCIARDO,McLaren,6.0,0 days 00:01:19.980000,0 days 00:01:20.031000,0 days 00:01:29.742000,2022,Emilia Romagna Grand Prix,False
+11,S PEREZ,Red Bull Racing,7.0,0 days 00:01:19.773000,0 days 00:01:19.296000,0 days 00:01:29.808000,2022,Emilia Romagna Grand Prix,False
+77,V BOTTAS,Alfa Romeo,8.0,0 days 00:01:20.419000,0 days 00:01:20.192000,0 days 00:01:30.439000,2022,Emilia Romagna Grand Prix,False
+5,S VETTEL,Aston Martin,9.0,0 days 00:01:20.364000,0 days 00:01:19.957000,0 days 00:01:31.062000,2022,Emilia Romagna Grand Prix,False
+55,C SAINZ,Ferrari,10.0,0 days 00:01:19.305000,0 days 00:01:18.990000,,2022,Emilia Romagna Grand Prix,False
+63,G RUSSELL,Mercedes,11.0,0 days 00:01:20.383000,0 days 00:01:20.757000,,2022,Emilia Romagna Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,12.0,0 days 00:01:20.422000,0 days 00:01:20.916000,,2022,Emilia Romagna Grand Prix,False
+44,L HAMILTON,Mercedes,13.0,0 days 00:01:20.470000,0 days 00:01:21.138000,,2022,Emilia Romagna Grand Prix,False
+24,G ZHOU,Alfa Romeo,14.0,0 days 00:01:19.730000,0 days 00:01:21.434000,,2022,Emilia Romagna Grand Prix,False
+18,L STROLL,Aston Martin,15.0,0 days 00:01:20.342000,0 days 00:01:28.119000,,2022,Emilia Romagna Grand Prix,False
+22,Y TSUNODA,AlphaTauri,16.0,0 days 00:01:20.474000,,,2022,Emilia Romagna Grand Prix,False
+10,P GASLY,AlphaTauri,17.0,0 days 00:01:20.732000,,,2022,Emilia Romagna Grand Prix,False
+6,N LATIFI,Williams,18.0,0 days 00:01:21.971000,,,2022,Emilia Romagna Grand Prix,False
+31,E OCON,Alpine,19.0,0 days 00:01:22.338000,,,2022,Emilia Romagna Grand Prix,False
+23,A ALBON,Williams,20.0,,,,2022,Emilia Romagna Grand Prix,False
+16,C LECLERC,Ferrari,1.0,0 days 00:01:29.474000,0 days 00:01:29.130000,0 days 00:01:28.796000,2022,Miami Grand Prix,False
+55,C SAINZ,Ferrari,2.0,0 days 00:01:30.079000,0 days 00:01:29.729000,0 days 00:01:28.986000,2022,Miami Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,3.0,0 days 00:01:29.836000,0 days 00:01:29.202000,0 days 00:01:28.991000,2022,Miami Grand Prix,False
+11,S PEREZ,Red Bull Racing,4.0,0 days 00:01:30.055000,0 days 00:01:29.673000,0 days 00:01:29.036000,2022,Miami Grand Prix,False
+77,V BOTTAS,Alfa Romeo,5.0,0 days 00:01:30.845000,0 days 00:01:29.751000,0 days 00:01:29.475000,2022,Miami Grand Prix,False
+44,L HAMILTON,Mercedes,6.0,0 days 00:01:30.388000,0 days 00:01:29.797000,0 days 00:01:29.625000,2022,Miami Grand Prix,False
+10,P GASLY,AlphaTauri,7.0,0 days 00:01:30.779000,0 days 00:01:30.128000,0 days 00:01:29.690000,2022,Miami Grand Prix,False
+4,L NORRIS,McLaren,8.0,0 days 00:01:30.761000,0 days 00:01:29.634000,0 days 00:01:29.750000,2022,Miami Grand Prix,False
+22,Y TSUNODA,AlphaTauri,9.0,0 days 00:01:30.485000,0 days 00:01:30.031000,0 days 00:01:29.932000,2022,Miami Grand Prix,False
+18,L STROLL,Aston Martin,10.0,0 days 00:01:30.441000,0 days 00:01:29.996000,0 days 00:01:30.676000,2022,Miami Grand Prix,False
+14,F ALONSO,Alpine,11.0,0 days 00:01:30.407000,0 days 00:01:30.160000,,2022,Miami Grand Prix,False
+63,G RUSSELL,Mercedes,12.0,0 days 00:01:30.490000,0 days 00:01:30.173000,,2022,Miami Grand Prix,False
+5,S VETTEL,Aston Martin,13.0,0 days 00:01:30.677000,0 days 00:01:30.214000,,2022,Miami Grand Prix,False
+3,D RICCIARDO,McLaren,14.0,0 days 00:01:30.583000,0 days 00:01:30.310000,,2022,Miami Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,15.0,0 days 00:01:30.645000,0 days 00:01:30.423000,,2022,Miami Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,16.0,0 days 00:01:30.975000,,,2022,Miami Grand Prix,False
+24,G ZHOU,Alfa Romeo,17.0,0 days 00:01:31.020000,,,2022,Miami Grand Prix,False
+23,A ALBON,Williams,18.0,0 days 00:01:31.266000,,,2022,Miami Grand Prix,False
+6,N LATIFI,Williams,19.0,0 days 00:01:31.325000,,,2022,Miami Grand Prix,False
+31,E OCON,Alpine,20.0,,,,2022,Miami Grand Prix,False
+16,C LECLERC,Ferrari,1.0,0 days 00:01:19.861000,0 days 00:01:19.969000,0 days 00:01:18.750000,2022,Spanish Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,2.0,0 days 00:01:20.091000,0 days 00:01:19.219000,0 days 00:01:19.073000,2022,Spanish Grand Prix,False
+55,C SAINZ,Ferrari,3.0,0 days 00:01:19.892000,0 days 00:01:19.453000,0 days 00:01:19.166000,2022,Spanish Grand Prix,False
+63,G RUSSELL,Mercedes,4.0,0 days 00:01:20.218000,0 days 00:01:19.470000,0 days 00:01:19.393000,2022,Spanish Grand Prix,False
+11,S PEREZ,Red Bull Racing,5.0,0 days 00:01:20.447000,0 days 00:01:19.830000,0 days 00:01:19.420000,2022,Spanish Grand Prix,False
+44,L HAMILTON,Mercedes,6.0,0 days 00:01:20.252000,0 days 00:01:19.794000,0 days 00:01:19.512000,2022,Spanish Grand Prix,False
+77,V BOTTAS,Alfa Romeo,7.0,0 days 00:01:20.355000,0 days 00:01:20.053000,0 days 00:01:19.608000,2022,Spanish Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,8.0,0 days 00:01:20.227000,0 days 00:01:19.810000,0 days 00:01:19.682000,2022,Spanish Grand Prix,False
+3,D RICCIARDO,McLaren,9.0,0 days 00:01:20.549000,0 days 00:01:20.287000,0 days 00:01:20.297000,2022,Spanish Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,10.0,0 days 00:01:20.683000,0 days 00:01:20.436000,0 days 00:01:20.368000,2022,Spanish Grand Prix,False
+4,L NORRIS,McLaren,11.0,0 days 00:01:20.838000,0 days 00:01:20.471000,,2022,Spanish Grand Prix,False
+31,E OCON,Alpine,12.0,0 days 00:01:20.880000,0 days 00:01:20.638000,,2022,Spanish Grand Prix,False
+22,Y TSUNODA,AlphaTauri,13.0,0 days 00:01:20.707000,0 days 00:01:20.639000,,2022,Spanish Grand Prix,False
+10,P GASLY,AlphaTauri,14.0,0 days 00:01:20.719000,0 days 00:01:20.861000,,2022,Spanish Grand Prix,False
+24,G ZHOU,Alfa Romeo,15.0,0 days 00:01:20.476000,0 days 00:01:21.094000,,2022,Spanish Grand Prix,False
+5,S VETTEL,Aston Martin,16.0,0 days 00:01:20.954000,,,2022,Spanish Grand Prix,False
+14,F ALONSO,Alpine,17.0,0 days 00:01:21.043000,,,2022,Spanish Grand Prix,False
+18,L STROLL,Aston Martin,18.0,0 days 00:01:21.418000,,,2022,Spanish Grand Prix,False
+23,A ALBON,Williams,19.0,0 days 00:01:21.645000,,,2022,Spanish Grand Prix,False
+6,N LATIFI,Williams,20.0,0 days 00:01:21.915000,,,2022,Spanish Grand Prix,False
+16,C LECLERC,Ferrari,1.0,0 days 00:01:12.569000,0 days 00:01:11.864000,0 days 00:01:11.376000,2022,Monaco Grand Prix,False
+55,C SAINZ,Ferrari,2.0,0 days 00:01:12.616000,0 days 00:01:12.074000,0 days 00:01:11.601000,2022,Monaco Grand Prix,False
+11,S PEREZ,Red Bull Racing,3.0,0 days 00:01:13.004000,0 days 00:01:11.954000,0 days 00:01:11.629000,2022,Monaco Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,4.0,0 days 00:01:12.993000,0 days 00:01:12.117000,0 days 00:01:11.666000,2022,Monaco Grand Prix,False
+4,L NORRIS,McLaren,5.0,0 days 00:01:12.927000,0 days 00:01:12.266000,0 days 00:01:11.849000,2022,Monaco Grand Prix,False
+63,G RUSSELL,Mercedes,6.0,0 days 00:01:12.787000,0 days 00:01:12.617000,0 days 00:01:12.112000,2022,Monaco Grand Prix,False
+14,F ALONSO,Alpine,7.0,0 days 00:01:13.394000,0 days 00:01:12.688000,0 days 00:01:12.247000,2022,Monaco Grand Prix,False
+44,L HAMILTON,Mercedes,8.0,0 days 00:01:13.444000,0 days 00:01:12.595000,0 days 00:01:12.560000,2022,Monaco Grand Prix,False
+5,S VETTEL,Aston Martin,9.0,0 days 00:01:13.313000,0 days 00:01:12.613000,0 days 00:01:12.732000,2022,Monaco Grand Prix,False
+31,E OCON,Alpine,10.0,0 days 00:01:12.848000,0 days 00:01:12.528000,0 days 00:01:13.047000,2022,Monaco Grand Prix,False
+22,Y TSUNODA,AlphaTauri,11.0,0 days 00:01:13.110000,0 days 00:01:12.797000,,2022,Monaco Grand Prix,False
+77,V BOTTAS,Alfa Romeo,12.0,0 days 00:01:13.541000,0 days 00:01:12.909000,,2022,Monaco Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,13.0,0 days 00:01:13.069000,0 days 00:01:12.921000,,2022,Monaco Grand Prix,False
+3,D RICCIARDO,McLaren,14.0,0 days 00:01:13.338000,0 days 00:01:12.964000,,2022,Monaco Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,15.0,0 days 00:01:13.469000,0 days 00:01:13.081000,,2022,Monaco Grand Prix,False
+23,A ALBON,Williams,16.0,0 days 00:01:13.611000,,,2022,Monaco Grand Prix,False
+10,P GASLY,AlphaTauri,17.0,0 days 00:01:13.660000,,,2022,Monaco Grand Prix,False
+18,L STROLL,Aston Martin,18.0,0 days 00:01:13.678000,,,2022,Monaco Grand Prix,False
+6,N LATIFI,Williams,19.0,0 days 00:01:14.403000,,,2022,Monaco Grand Prix,False
+24,G ZHOU,Alfa Romeo,20.0,0 days 00:01:15.606000,,,2022,Monaco Grand Prix,False
+16,C LECLERC,Ferrari,1.0,0 days 00:01:42.865000,0 days 00:01:42.046000,0 days 00:01:41.359000,2022,Azerbaijan Grand Prix,False
+11,S PEREZ,Red Bull Racing,2.0,0 days 00:01:42.733000,0 days 00:01:41.955000,0 days 00:01:41.641000,2022,Azerbaijan Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,3.0,0 days 00:01:42.722000,0 days 00:01:42.227000,0 days 00:01:41.706000,2022,Azerbaijan Grand Prix,False
+55,C SAINZ,Ferrari,4.0,0 days 00:01:42.957000,0 days 00:01:42.088000,0 days 00:01:41.814000,2022,Azerbaijan Grand Prix,False
+63,G RUSSELL,Mercedes,5.0,0 days 00:01:43.754000,0 days 00:01:43.281000,0 days 00:01:42.712000,2022,Azerbaijan Grand Prix,False
+10,P GASLY,AlphaTauri,6.0,0 days 00:01:43.268000,0 days 00:01:43.129000,0 days 00:01:42.845000,2022,Azerbaijan Grand Prix,False
+44,L HAMILTON,Mercedes,7.0,0 days 00:01:43.939000,0 days 00:01:43.182000,0 days 00:01:42.924000,2022,Azerbaijan Grand Prix,False
+22,Y TSUNODA,AlphaTauri,8.0,0 days 00:01:43.595000,0 days 00:01:43.376000,0 days 00:01:43.056000,2022,Azerbaijan Grand Prix,False
+5,S VETTEL,Aston Martin,9.0,0 days 00:01:43.279000,0 days 00:01:43.268000,0 days 00:01:43.091000,2022,Azerbaijan Grand Prix,False
+14,F ALONSO,Alpine,10.0,0 days 00:01:44.083000,0 days 00:01:43.360000,0 days 00:01:43.173000,2022,Azerbaijan Grand Prix,False
+4,L NORRIS,McLaren,11.0,0 days 00:01:44.237000,0 days 00:01:43.398000,,2022,Azerbaijan Grand Prix,False
+3,D RICCIARDO,McLaren,12.0,0 days 00:01:44.437000,0 days 00:01:43.574000,,2022,Azerbaijan Grand Prix,False
+31,E OCON,Alpine,13.0,0 days 00:01:43.903000,0 days 00:01:43.585000,,2022,Azerbaijan Grand Prix,False
+24,G ZHOU,Alfa Romeo,14.0,0 days 00:01:43.777000,0 days 00:01:43.790000,,2022,Azerbaijan Grand Prix,False
+77,V BOTTAS,Alfa Romeo,15.0,0 days 00:01:44.478000,0 days 00:01:44.444000,,2022,Azerbaijan Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,16.0,0 days 00:01:44.643000,,,2022,Azerbaijan Grand Prix,False
+23,A ALBON,Williams,17.0,0 days 00:01:44.719000,,,2022,Azerbaijan Grand Prix,False
+6,N LATIFI,Williams,18.0,0 days 00:01:45.367000,,,2022,Azerbaijan Grand Prix,False
+18,L STROLL,Aston Martin,19.0,0 days 00:01:45.371000,,,2022,Azerbaijan Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,20.0,0 days 00:01:45.775000,,,2022,Azerbaijan Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,1.0,0 days 00:01:32.219000,0 days 00:01:23.746000,0 days 00:01:21.299000,2022,Canadian Grand Prix,True
+14,F ALONSO,Alpine,2.0,0 days 00:01:32.277000,0 days 00:01:24.848000,0 days 00:01:21.944000,2022,Canadian Grand Prix,True
+55,C SAINZ,Ferrari,3.0,0 days 00:01:32.781000,0 days 00:01:25.197000,0 days 00:01:22.096000,2022,Canadian Grand Prix,True
+44,L HAMILTON,Mercedes,4.0,0 days 00:01:33.841000,0 days 00:01:25.543000,0 days 00:01:22.891000,2022,Canadian Grand Prix,True
+20,K MAGNUSSEN,Haas F1 Team,5.0,0 days 00:01:32.957000,0 days 00:01:26.254000,0 days 00:01:22.960000,2022,Canadian Grand Prix,True
+47,M SCHUMACHER,Haas F1 Team,6.0,0 days 00:01:33.707000,0 days 00:01:25.684000,0 days 00:01:23.356000,2022,Canadian Grand Prix,True
+31,E OCON,Alpine,7.0,0 days 00:01:33.012000,0 days 00:01:26.135000,0 days 00:01:23.529000,2022,Canadian Grand Prix,True
+63,G RUSSELL,Mercedes,8.0,0 days 00:01:33.160000,0 days 00:01:24.950000,0 days 00:01:23.557000,2022,Canadian Grand Prix,True
+3,D RICCIARDO,McLaren,9.0,0 days 00:01:33.636000,0 days 00:01:26.375000,0 days 00:01:23.749000,2022,Canadian Grand Prix,True
+24,G ZHOU,Alfa Romeo,10.0,0 days 00:01:33.692000,0 days 00:01:26.116000,0 days 00:01:24.030000,2022,Canadian Grand Prix,True
+77,V BOTTAS,Alfa Romeo,11.0,0 days 00:01:33.689000,0 days 00:01:26.788000,,2022,Canadian Grand Prix,True
+23,A ALBON,Williams,12.0,0 days 00:01:34.047000,0 days 00:01:26.858000,,2022,Canadian Grand Prix,True
+11,S PEREZ,Red Bull Racing,13.0,0 days 00:01:33.929000,0 days 00:01:33.127000,,2022,Canadian Grand Prix,True
+4,L NORRIS,McLaren,14.0,0 days 00:01:34.066000,,,2022,Canadian Grand Prix,True
+16,C LECLERC,Ferrari,15.0,0 days 00:01:33.008000,,,2022,Canadian Grand Prix,True
+10,P GASLY,AlphaTauri,16.0,0 days 00:01:34.492000,,,2022,Canadian Grand Prix,True
+5,S VETTEL,Aston Martin,17.0,0 days 00:01:34.512000,,,2022,Canadian Grand Prix,True
+18,L STROLL,Aston Martin,18.0,0 days 00:01:35.532000,,,2022,Canadian Grand Prix,True
+6,N LATIFI,Williams,19.0,0 days 00:01:35.660000,,,2022,Canadian Grand Prix,True
+22,Y TSUNODA,AlphaTauri,20.0,0 days 00:01:36.575000,,,2022,Canadian Grand Prix,True
+55,C SAINZ,Ferrari,1.0,0 days 00:01:40.190000,0 days 00:01:41.602000,0 days 00:01:40.983000,2022,British Grand Prix,True
+1,M VERSTAPPEN,Red Bull Racing,2.0,0 days 00:01:39.129000,0 days 00:01:40.655000,0 days 00:01:41.055000,2022,British Grand Prix,True
+16,C LECLERC,Ferrari,3.0,0 days 00:01:39.846000,0 days 00:01:41.247000,0 days 00:01:41.298000,2022,British Grand Prix,True
+11,S PEREZ,Red Bull Racing,4.0,0 days 00:01:40.521000,0 days 00:01:42.513000,0 days 00:01:41.616000,2022,British Grand Prix,True
+44,L HAMILTON,Mercedes,5.0,0 days 00:01:40.428000,0 days 00:01:41.062000,0 days 00:01:41.995000,2022,British Grand Prix,True
+4,L NORRIS,McLaren,6.0,0 days 00:01:41.515000,0 days 00:01:41.821000,0 days 00:01:42.084000,2022,British Grand Prix,True
+14,F ALONSO,Alpine,7.0,0 days 00:01:41.598000,0 days 00:01:42.209000,0 days 00:01:42.116000,2022,British Grand Prix,True
+63,G RUSSELL,Mercedes,8.0,0 days 00:01:40.028000,0 days 00:01:41.725000,0 days 00:01:42.161000,2022,British Grand Prix,True
+24,G ZHOU,Alfa Romeo,9.0,0 days 00:01:40.791000,0 days 00:01:42.640000,0 days 00:01:42.719000,2022,British Grand Prix,True
+6,N LATIFI,Williams,10.0,0 days 00:01:41.998000,0 days 00:01:43.273000,0 days 00:02:03.095000,2022,British Grand Prix,True
+10,P GASLY,AlphaTauri,11.0,0 days 00:01:41.680000,0 days 00:01:43.702000,,2022,British Grand Prix,True
+77,V BOTTAS,Alfa Romeo,12.0,0 days 00:01:41.396000,0 days 00:01:44.232000,,2022,British Grand Prix,True
+22,Y TSUNODA,AlphaTauri,13.0,0 days 00:01:41.893000,0 days 00:01:44.311000,,2022,British Grand Prix,True
+3,D RICCIARDO,McLaren,14.0,0 days 00:01:41.933000,0 days 00:01:44.355000,,2022,British Grand Prix,True
+31,E OCON,Alpine,15.0,0 days 00:01:41.730000,0 days 00:01:45.190000,,2022,British Grand Prix,True
+23,A ALBON,Williams,16.0,0 days 00:01:42.078000,,,2022,British Grand Prix,True
+20,K MAGNUSSEN,Haas F1 Team,17.0,0 days 00:01:42.159000,,,2022,British Grand Prix,True
+5,S VETTEL,Aston Martin,18.0,0 days 00:01:42.666000,,,2022,British Grand Prix,True
+47,M SCHUMACHER,Haas F1 Team,19.0,0 days 00:01:42.708000,,,2022,British Grand Prix,True
+18,L STROLL,Aston Martin,20.0,0 days 00:01:43.430000,,,2022,British Grand Prix,True
+1,M VERSTAPPEN,Red Bull Racing,1.0,0 days 00:01:05.852000,0 days 00:01:05.374000,0 days 00:01:04.984000,2022,Austrian Grand Prix,False
+16,C LECLERC,Ferrari,2.0,0 days 00:01:05.419000,0 days 00:01:05.287000,0 days 00:01:05.013000,2022,Austrian Grand Prix,False
+55,C SAINZ,Ferrari,3.0,0 days 00:01:05.660000,0 days 00:01:05.576000,0 days 00:01:05.066000,2022,Austrian Grand Prix,False
+63,G RUSSELL,Mercedes,4.0,0 days 00:01:06.235000,0 days 00:01:05.697000,0 days 00:01:05.431000,2022,Austrian Grand Prix,False
+31,E OCON,Alpine,5.0,0 days 00:01:06.468000,0 days 00:01:05.993000,0 days 00:01:05.726000,2022,Austrian Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,6.0,0 days 00:01:06.366000,0 days 00:01:05.894000,0 days 00:01:05.879000,2022,Austrian Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,7.0,0 days 00:01:06.405000,0 days 00:01:06.151000,0 days 00:01:06.011000,2022,Austrian Grand Prix,False
+14,F ALONSO,Alpine,8.0,0 days 00:01:06.016000,0 days 00:01:06.082000,0 days 00:01:06.103000,2022,Austrian Grand Prix,False
+44,L HAMILTON,Mercedes,9.0,0 days 00:01:06.079000,0 days 00:01:05.475000,0 days 00:01:13.151000,2022,Austrian Grand Prix,False
+10,P GASLY,AlphaTauri,10.0,0 days 00:01:06.589000,0 days 00:01:06.160000,,2022,Austrian Grand Prix,False
+23,A ALBON,Williams,11.0,0 days 00:01:06.516000,0 days 00:01:06.230000,,2022,Austrian Grand Prix,False
+77,V BOTTAS,Alfa Romeo,12.0,0 days 00:01:06.442000,0 days 00:01:06.319000,,2022,Austrian Grand Prix,False
+11,S PEREZ,Red Bull Racing,13.0,0 days 00:01:06.143000,0 days 00:01:06.458000,,2022,Austrian Grand Prix,False
+22,Y TSUNODA,AlphaTauri,14.0,0 days 00:01:06.463000,0 days 00:01:06.851000,,2022,Austrian Grand Prix,False
+4,L NORRIS,McLaren,15.0,0 days 00:01:06.330000,0 days 00:01:25.847000,,2022,Austrian Grand Prix,False
+3,D RICCIARDO,McLaren,16.0,0 days 00:01:06.613000,,,2022,Austrian Grand Prix,False
+18,L STROLL,Aston Martin,17.0,0 days 00:01:06.847000,,,2022,Austrian Grand Prix,False
+24,G ZHOU,Alfa Romeo,18.0,0 days 00:01:06.901000,,,2022,Austrian Grand Prix,False
+6,N LATIFI,Williams,19.0,0 days 00:01:07.003000,,,2022,Austrian Grand Prix,False
+5,S VETTEL,Aston Martin,20.0,0 days 00:01:07.083000,,,2022,Austrian Grand Prix,False
+16,C LECLERC,Ferrari,1.0,0 days 00:01:31.727000,0 days 00:01:31.216000,0 days 00:01:30.872000,2022,French Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,2.0,0 days 00:01:31.891000,0 days 00:01:31.990000,0 days 00:01:31.176000,2022,French Grand Prix,False
+11,S PEREZ,Red Bull Racing,3.0,0 days 00:01:32.354000,0 days 00:01:32.120000,0 days 00:01:31.335000,2022,French Grand Prix,False
+44,L HAMILTON,Mercedes,4.0,0 days 00:01:33.041000,0 days 00:01:32.274000,0 days 00:01:31.765000,2022,French Grand Prix,False
+4,L NORRIS,McLaren,5.0,0 days 00:01:32.672000,0 days 00:01:32.777000,0 days 00:01:32.032000,2022,French Grand Prix,False
+63,G RUSSELL,Mercedes,6.0,0 days 00:01:33.109000,0 days 00:01:32.633000,0 days 00:01:32.131000,2022,French Grand Prix,False
+14,F ALONSO,Alpine,7.0,0 days 00:01:32.819000,0 days 00:01:32.631000,0 days 00:01:32.552000,2022,French Grand Prix,False
+22,Y TSUNODA,AlphaTauri,8.0,0 days 00:01:33.394000,0 days 00:01:32.836000,0 days 00:01:32.780000,2022,French Grand Prix,False
+55,C SAINZ,Ferrari,9.0,0 days 00:01:32.297000,0 days 00:01:31.081000,,2022,French Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,10.0,0 days 00:01:32.756000,0 days 00:01:32.649000,,2022,French Grand Prix,False
+3,D RICCIARDO,McLaren,11.0,0 days 00:01:33.404000,0 days 00:01:32.922000,,2022,French Grand Prix,False
+31,E OCON,Alpine,12.0,0 days 00:01:33.346000,0 days 00:01:33.048000,,2022,French Grand Prix,False
+77,V BOTTAS,Alfa Romeo,13.0,0 days 00:01:33.034000,0 days 00:01:33.052000,,2022,French Grand Prix,False
+5,S VETTEL,Aston Martin,14.0,0 days 00:01:33.285000,0 days 00:01:33.276000,,2022,French Grand Prix,False
+23,A ALBON,Williams,15.0,0 days 00:01:33.423000,0 days 00:01:33.307000,,2022,French Grand Prix,False
+10,P GASLY,AlphaTauri,16.0,0 days 00:01:33.439000,,,2022,French Grand Prix,False
+18,L STROLL,Aston Martin,17.0,0 days 00:01:33.439000,,,2022,French Grand Prix,False
+24,G ZHOU,Alfa Romeo,18.0,0 days 00:01:33.674000,,,2022,French Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,19.0,0 days 00:01:33.701000,,,2022,French Grand Prix,False
+6,N LATIFI,Williams,20.0,0 days 00:01:33.794000,,,2022,French Grand Prix,False
+63,G RUSSELL,Mercedes,1.0,0 days 00:01:18.407000,0 days 00:01:18.154000,0 days 00:01:17.377000,2022,Hungarian Grand Prix,False
+55,C SAINZ,Ferrari,2.0,0 days 00:01:18.434000,0 days 00:01:17.946000,0 days 00:01:17.421000,2022,Hungarian Grand Prix,False
+16,C LECLERC,Ferrari,3.0,0 days 00:01:18.806000,0 days 00:01:17.768000,0 days 00:01:17.567000,2022,Hungarian Grand Prix,False
+4,L NORRIS,McLaren,4.0,0 days 00:01:18.653000,0 days 00:01:18.121000,0 days 00:01:17.769000,2022,Hungarian Grand Prix,False
+31,E OCON,Alpine,5.0,0 days 00:01:18.866000,0 days 00:01:18.216000,0 days 00:01:18.018000,2022,Hungarian Grand Prix,False
+14,F ALONSO,Alpine,6.0,0 days 00:01:18.716000,0 days 00:01:17.904000,0 days 00:01:18.078000,2022,Hungarian Grand Prix,False
+44,L HAMILTON,Mercedes,7.0,0 days 00:01:18.374000,0 days 00:01:18.035000,0 days 00:01:18.142000,2022,Hungarian Grand Prix,False
+77,V BOTTAS,Alfa Romeo,8.0,0 days 00:01:18.935000,0 days 00:01:18.445000,0 days 00:01:18.157000,2022,Hungarian Grand Prix,False
+3,D RICCIARDO,McLaren,9.0,0 days 00:01:18.775000,0 days 00:01:18.198000,0 days 00:01:18.379000,2022,Hungarian Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,10.0,0 days 00:01:18.509000,0 days 00:01:17.703000,0 days 00:01:18.823000,2022,Hungarian Grand Prix,False
+11,S PEREZ,Red Bull Racing,11.0,0 days 00:01:19.118000,0 days 00:01:18.516000,,2022,Hungarian Grand Prix,False
+24,G ZHOU,Alfa Romeo,12.0,0 days 00:01:18.973000,0 days 00:01:18.573000,,2022,Hungarian Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,13.0,0 days 00:01:18.993000,0 days 00:01:18.825000,,2022,Hungarian Grand Prix,False
+18,L STROLL,Aston Martin,14.0,0 days 00:01:19.205000,0 days 00:01:19.137000,,2022,Hungarian Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,15.0,0 days 00:01:19.164000,0 days 00:01:19.202000,,2022,Hungarian Grand Prix,False
+22,Y TSUNODA,AlphaTauri,16.0,0 days 00:01:19.240000,,,2022,Hungarian Grand Prix,False
+23,A ALBON,Williams,17.0,0 days 00:01:19.256000,,,2022,Hungarian Grand Prix,False
+5,S VETTEL,Aston Martin,18.0,0 days 00:01:19.273000,,,2022,Hungarian Grand Prix,False
+10,P GASLY,AlphaTauri,19.0,0 days 00:01:19.527000,,,2022,Hungarian Grand Prix,False
+6,N LATIFI,Williams,20.0,0 days 00:01:19.570000,,,2022,Hungarian Grand Prix,False
+1,M VERSTAPPEN,Red Bull Racing,1.0,0 days 00:01:44.581000,0 days 00:01:44.723000,0 days 00:01:43.665000,2022,Belgian Grand Prix,False
+55,C SAINZ,Ferrari,2.0,0 days 00:01:45.050000,0 days 00:01:45.418000,0 days 00:01:44.297000,2022,Belgian Grand Prix,False
+11,S PEREZ,Red Bull Racing,3.0,0 days 00:01:45.377000,0 days 00:01:44.794000,0 days 00:01:44.462000,2022,Belgian Grand Prix,False
+16,C LECLERC,Ferrari,4.0,0 days 00:01:45.572000,0 days 00:01:44.551000,0 days 00:01:44.553000,2022,Belgian Grand Prix,False
+31,E OCON,Alpine,5.0,0 days 00:01:46.039000,0 days 00:01:45.475000,0 days 00:01:45.180000,2022,Belgian Grand Prix,False
+14,F ALONSO,Alpine,6.0,0 days 00:01:46.075000,0 days 00:01:45.552000,0 days 00:01:45.368000,2022,Belgian Grand Prix,False
+44,L HAMILTON,Mercedes,7.0,0 days 00:01:45.736000,0 days 00:01:45.420000,0 days 00:01:45.503000,2022,Belgian Grand Prix,False
+63,G RUSSELL,Mercedes,8.0,0 days 00:01:45.650000,0 days 00:01:45.461000,0 days 00:01:45.776000,2022,Belgian Grand Prix,False
+23,A ALBON,Williams,9.0,0 days 00:01:45.672000,0 days 00:01:45.675000,0 days 00:01:45.837000,2022,Belgian Grand Prix,False
+4,L NORRIS,McLaren,10.0,0 days 00:01:45.745000,0 days 00:01:45.603000,0 days 00:01:46.178000,2022,Belgian Grand Prix,False
+3,D RICCIARDO,McLaren,11.0,0 days 00:01:46.212000,0 days 00:01:45.767000,,2022,Belgian Grand Prix,False
+10,P GASLY,AlphaTauri,12.0,0 days 00:01:46.183000,0 days 00:01:45.827000,,2022,Belgian Grand Prix,False
+24,G ZHOU,Alfa Romeo,13.0,0 days 00:01:46.178000,0 days 00:01:46.085000,,2022,Belgian Grand Prix,False
+18,L STROLL,Aston Martin,14.0,0 days 00:01:46.256000,0 days 00:01:46.611000,,2022,Belgian Grand Prix,False
+47,M SCHUMACHER,Haas F1 Team,15.0,0 days 00:01:46.342000,0 days 00:01:47.718000,,2022,Belgian Grand Prix,False
+5,S VETTEL,Aston Martin,16.0,0 days 00:01:46.344000,,,2022,Belgian Grand Prix,False
+6,N LATIFI,Williams,17.0,0 days 00:01:46.401000,,,2022,Belgian Grand Prix,False
+20,K MAGNUSSEN,Haas F1 Team,18.0,0 days 00:01:46.557000,,,2022,Belgian Grand Prix,False
+22,Y TSUNODA,AlphaTauri,19.0,0 days 00:01:46.692000,,,2022,Belgian Grand Prix,False
+77,V BOTTAS,Alfa Romeo,20.0,0 days 00:01:47.866000,,,2022,Belgian Grand Prix,False

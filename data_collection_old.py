@@ -9,8 +9,6 @@ import argparse
 import gc
 import sys
 
-#using data drom session.results
-
 class F1DataFetcher:
     def __init__(self, cache_dir='f1_cache', output_dir='f1_data', reload=False):
         """
@@ -71,7 +69,7 @@ class F1DataFetcher:
        
         for year in years:
             try:
-                output_file = self.output_dir / f'qualifying_data_{year}_results.csv'
+                output_file = self.output_dir / f'qualifying_data_{year}.csv'
                     
                 # Skip if file exists and reload is False
                 if output_file.exists() and not self.reload:
@@ -132,51 +130,72 @@ class F1DataFetcher:
     def _process_year_events(self, year, schedule):
         """Process all events for a given year."""
         yearly_data = []
-
+    
         for _, event in schedule.iterrows():
             try:
                 time.sleep(2)  # attempt at rate limiting 
-    
-                #session = fastf1.get_session(year, event['EventName'], 'Q')
-                #session.load()
-                
+        
                 session = fastf1.get_session(year, event['EventName'], 'Q')
-                session.load(laps=False, telemetry=False, weather=True, messages=False)
-
-
-                laps = session.laps 
+                session.load()
+        
+                laps = session.laps #df of all quali laps in that session 
                 weather_data = session.weather_data
+
+                wet_compounds = {'INTERMEDIATE', 'WET'}
 
                 # Determine if session is wet based on rainfall 
                 is_wet = False
-                if weather_data is not None and 'Rainfall' in weather_data.columns:
-                    session_weather = weather_data  # No need to filter by time since we're not using laps
-                    if not session_weather.empty:
-                        rain_percentage = session_weather['Rainfall'].mean()
-                        is_wet = rain_percentage > 0.5
 
-                # Extract relevant columns from session.results
-                results_data = session.results[['DriverNumber', 'BroadcastName', 'TeamName', 
-                                          'Position', 'Q1', 'Q2', 'Q3']].copy()
+                if weather_data is not None and 'Rainfall' in weather_data.columns:
+                    # Get the time range of session
+                    session_start = laps['Time'].min()
+                    session_end = laps['Time'].max()
+                    
+                    # Filter weather data to only include readings during the session
+                    session_weather = weather_data[
+                        (weather_data['Time'] >= session_start) & 
+                        (weather_data['Time'] <= session_end)
+                    ]
+                    
+                    # Calculate the percentage of weather readings that showed rainfall
+                    if not session_weather.empty:
+                        rain_percentage = session_weather['Rainfall'].mean() #proportion of True
+                        is_wet = rain_percentage > 0.5  # True if more than 50% of session had rain
+                       
+
+                #map driver, number, position to laps df 
+                driver_info = {}
+                for _, driver in session.results.iterrows():  
+                    driver_number = driver['DriverNumber']
+                    driver_info[driver_number] = {
+                        'BroadcastName': driver['BroadcastName'],
+                        'Position': driver['Position'], # Add quali position
+                    }
             
-                # Add event and weather information
-                results_data['Year'] = year
-                results_data['EventName'] = event['EventName']
-                results_data['WetSession'] = is_wet
-            
-                yearly_data.append(results_data)
+                laps['Driver'] = laps['DriverNumber'].map(lambda x: driver_info[x]['BroadcastName']) #gets corresponding name for every number and saves as Driver
+                laps['QualifyingPosition'] = laps['DriverNumber'].map(lambda x: driver_info[x]['Position'])
+
+                
+                laps['Year'] = year
+                laps['EventName'] = event['EventName']
+                laps['WetSession'] = is_wet
+        
+                yearly_data.append(laps)
 
             except Exception as e:
-                self.logger.error(f"Error loading {event['EventName']} {year}: {str(e)}")
+                self.logger.error(
+                    f"Error loading {event['EventName']} {year}: {str(e)}"
+                )
 
         return yearly_data
+
 def main():
     parser = argparse.ArgumentParser(description='Fetch F1 Quali Data')
     parser.add_argument('--years', nargs='+', type=int, required=True,
                       help='Years to fetch data for')
     parser.add_argument('--cache-dir', default='f1_cache',
                       help='Directory for FastF1 cache')
-    parser.add_argument('--output-dir', default='data/results_data',
+    parser.add_argument('--output-dir', default='data/original_data',
                       help='Directory for output files')
     parser.add_argument('--reload', default= False,
                       help='Reload existing data')

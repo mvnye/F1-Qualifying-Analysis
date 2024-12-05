@@ -1,4 +1,5 @@
-
+import pandas as pd
+import fastf1
 from pathlib import Path
 import numpy as np
 import argparse
