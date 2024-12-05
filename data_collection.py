@@ -135,7 +135,7 @@ class F1DataFetcher:
 
         for _, event in schedule.iterrows():
             try:
-                time.sleep(2)  # attempt at rate limiting 
+                time.sleep(5)  # attempt at rate limiting 
     
                 #session = fastf1.get_session(year, event['EventName'], 'Q')
                 #session.load()
@@ -150,12 +150,12 @@ class F1DataFetcher:
                 # Determine if session is wet based on rainfall 
                 is_wet = False
                 if weather_data is not None and 'Rainfall' in weather_data.columns:
-                    session_weather = weather_data  # No need to filter by time since we're not using laps
+                    session_weather = weather_data  
                     if not session_weather.empty:
                         rain_percentage = session_weather['Rainfall'].mean()
                         is_wet = rain_percentage > 0.5
 
-                # Extract relevant columns from session.results
+                # get relevant columns from session.results
                 results_data = session.results[['DriverNumber', 'BroadcastName', 'TeamName', 
                                           'Position', 'Q1', 'Q2', 'Q3']].copy()
             
