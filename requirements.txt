@@ -1,4 +1,9 @@
-fastf1
 pandas
 tqdm
 python-dateutil
+numpy
+panel
+hvplot
+holoviews
+plotly
+fastf1
