@@ -12,18 +12,17 @@ import sys
 #using data drom session.results
 
 class F1DataFetcher:
-    def __init__(self, cache_dir='f1_cache', output_dir='f1_data', reload=False):
+    def __init__(self, cache_dir: str = 'f1_cache', 
+                 output_dir: str = 'f1_data', 
+                 reload: bool = False) -> None:
         """
         Initialize F1 data fetcher.
         
         Args:
-            cache_dir (str): Directory for FastF1 cache
-            output_dir (str): Directory for output CSV files
-            reload (bool): If True, reload data 
+            cache_dir: Directory for FastF1 cache
+            output_dir: Directory for output CSV files
+            reload: If True, reload data 
         """
-        self.cache_dir = Path(cache_dir)
-        self.output_dir = Path(output_dir)
-        self.reload = reload
         
         # Create directories with parent directories if needed
         self.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -36,7 +35,7 @@ class F1DataFetcher:
         # Initialize FastF1
         self._setup_fastf1()
         
-    def _setup_logging(self):
+    def _setup_logging(self) -> None:
         """Configure logging for errors."""
         log_file = self.output_dir / 'data_collection.log'
     
@@ -51,7 +50,7 @@ class F1DataFetcher:
 
         self.logger = logging.getLogger(__name__)
     
-    def _setup_fastf1(self):
+    def _setup_fastf1(self)  -> None:
         """Initialize FastF1 with cache."""
         try:
             fastf1.Cache.enable_cache(str(self.cache_dir))
@@ -59,13 +58,16 @@ class F1DataFetcher:
             self.logger.error(f"Failed to initialize FastF1 cache: {e}")
             sys.exit(1)
     
-    def fetch_qualifying_data(self, years):
+    def fetch_qualifying_data(self, years) -> dict:
         """
         Fetch qualifying data for specified years.
         
         Args:
             years (list): List of years to fetch data for
+        Returns:
+            dict: Dictionary with 'success' and 'failed' year lists
         """
+
         results = {'success': [], 'failed': []}
         
        
@@ -105,8 +107,19 @@ class F1DataFetcher:
         
         return results
     
-    def _get_schedule(self, year, max_retries=3, delay=5):
-        """Get event schedule with retry logic."""
+    def _get_schedule(self, year: int, max_retries: int = 3, delay: int = 5) -> pd.DataFrame | None:
+        """
+        Get event schedule with retry logic.
+        
+        Args:
+            year: Year to fetch schedule for
+            max_retries: Maximum number of retry attempts
+            delay: Delay between retries in seconds
+            
+        Returns:
+            DataFrame of schedule or None if failed
+        """
+
         for attempt in range(max_retries):
             try:
                 schedule = fastf1.get_event_schedule(year)
@@ -129,8 +142,17 @@ class F1DataFetcher:
                     self.logger.error(f"Failed to get {year} schedule: {str(e)}")
                     return None
     
-    def _process_year_events(self, year, schedule):
-        """Process all events for a given year."""
+    def _process_year_events(self, year: int, schedule: pd.DataFrame) -> list:
+        """
+        Process all events for a given year.
+        
+        Args:
+            year: Year to process
+            schedule: DataFrame containing event schedule
+            
+        Returns:
+            list: List of DataFrames containing event data
+        """
         yearly_data = []
 
         for _, event in schedule.iterrows():
@@ -170,13 +192,14 @@ class F1DataFetcher:
                 self.logger.error(f"Error loading {event['EventName']} {year}: {str(e)}")
 
         return yearly_data
-def main():
+def main() -> None:
+    """Main function to run the F1 data fetcher."""
     parser = argparse.ArgumentParser(description='Fetch F1 Quali Data')
     parser.add_argument('--years', nargs='+', type=int, required=True,
                       help='Years to fetch data for')
     parser.add_argument('--cache-dir', default='f1_cache',
                       help='Directory for FastF1 cache')
-    parser.add_argument('--output-dir', default='data/results_data',
+    parser.add_argument('--output-dir', default='../data/results_data',
                       help='Directory for output files')
     parser.add_argument('--reload', default= False,
                       help='Reload existing data')
