@@ -217,7 +217,7 @@ def process_qualifying_data(quali_data: pd.DataFrame) -> list:
 
 if __name__ == "__main__":
     logger.info("Starting data processing ")
-    quali_data = combine_csv_files('data/results_data')
+    quali_data = combine_csv_files('../data')
     if quali_data is not None:
         quali_data = convert_time(quali_data)
         career_timeline_data = process_qualifying_data(quali_data)

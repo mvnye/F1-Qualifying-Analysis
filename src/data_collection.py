@@ -199,7 +199,7 @@ def main() -> None:
                       help='Years to fetch data for')
     parser.add_argument('--cache-dir', default='f1_cache',
                       help='Directory for FastF1 cache')
-    parser.add_argument('--output-dir', default='../data/results_data',
+    parser.add_argument('--output-dir', default='../data',
                       help='Directory for output files')
     parser.add_argument('--reload', default= False,
                       help='Reload existing data')
