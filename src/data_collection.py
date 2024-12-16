@@ -24,6 +24,10 @@ class F1DataFetcher:
             reload: If True, reload data 
         """
         
+        self.cache_dir = Path(cache_dir)
+        self.output_dir = Path(output_dir)
+        self.reload = reload
+
         # Create directories with parent directories if needed
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -163,8 +167,8 @@ class F1DataFetcher:
                 #session.load()
                 
                 session = fastf1.get_session(year, event['EventName'], 'Q')
-                session.load(laps=False, telemetry=False, weather=True, messages=False)
-
+                #session.load(laps=False, telemetry=False, weather=True, messages=False)
+                session.load()
 
                 laps = session.laps 
                 weather_data = session.weather_data
