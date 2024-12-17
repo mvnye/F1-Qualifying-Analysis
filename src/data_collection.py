@@ -9,7 +9,7 @@ import argparse
 import gc
 import sys
 
-logging.getLogger('fastf1._api').setLevel(logging.ERROR)
+
 
 class F1DataFetcher:
     def __init__(self, cache_dir: str = 'f1_cache', 
@@ -44,9 +44,9 @@ class F1DataFetcher:
 
         log_file = self.output_dir / 'data_collection.log'
     
-        # Configure root logger
+        # Configure root loggerW
         root_logger = logging.getLogger()
-        root_logger.setLevel(logging.WARNING)
+        root_logger.setLevel(logging.ERROR)
         
         # Set format for logs
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
