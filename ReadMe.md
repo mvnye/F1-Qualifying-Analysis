@@ -98,4 +98,4 @@ The interactive dashboard provides comprehensive qualifying analysis with severa
 - Processed data is saved as career_timeline.json in the data directory
 - FastF1 cache is stored in f1_cache directory
 
-For more information about project goals, motivations, and background, see `WriteUp.pdf`
+For more information about project goals, background, and future work, see `WriteUp.pdf`
