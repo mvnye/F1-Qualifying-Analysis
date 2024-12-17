@@ -61,7 +61,7 @@ class F1DataFetcher:
         
         # Suppress all other loggers
         for logger_name in logging.root.manager.loggerDict:
-            logging.getLogger(logger_name).setLevel(logging.WARNING)
+            logging.getLogger(logger_name).setLevel(logging.Error)
         
         # Create our specific logger
         self.logger = logging.getLogger(__name__)
