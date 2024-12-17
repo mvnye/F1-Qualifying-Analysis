@@ -51,7 +51,11 @@ python dashboard.py
 The project consists of three main Python scripts:
 
 ### data_collection.py
-Downloads and organizes F1 qualifying data into CSV files for each year specified. The script implements error logging to track the data collection process. While FastF1 may generate error messages about driver lap timing inaccuracies during collection, these are expected behaviors and don't affect the overall dataset quality. The script will explicitly notify you if data collection fails for any specific year. Options:
+Downloads and organizes F1 qualifying data into CSV files for each year specified. 
+
+The script implements error logging to track the data collection process. While FastF1 may generate error messages about driver lap timing inaccuracies during collection, these are expected behaviors and don't affect the overall dataset quality. The script will explicitly notify you if data collection fails for any specific year. 
+
+Options:
 - `--years` (Required): List of years (since 2018) to fetch data (e.g., 2021 2022 2023)
 - `--cache-dir`: Directory for FastF1's cache (default: f1_cache)
 - `--output-dir`: Directory to save fetched data (default: data)
