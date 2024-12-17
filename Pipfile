@@ -9,6 +9,10 @@ tqdm = "*"
 python-dateutil = "*"
 fastf1 = "*"
 jupyter-bokeh = "*"
+numpy = "*"
+panel = "*"
+hvplot = "*"
+holoviews = "*"
 
 [dev-packages]
 
