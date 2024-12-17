@@ -1,5 +1,13 @@
 # F1 Qualifying Analysis
-For my final project I plan to focus on track-based and driver-based qualifying performance, I am currently working on code to obtain the track data.
+
+This project analyzes Formula 1 qualifying data to create interactive visualizations of driver performances across seasons. By collecting and processing data from qualifying sessions, it provides insights into drivers' qualifying positions, gaps to pole position, and teammate comparisons. The resulting dashboard allows users to explore each driver's career timeline, analyze their performance trends, and examine specific qualifying sessions in detail. 
+
+The analysis focuses on key performance metrics including:
+- Qualifying positions throughout seasons
+- Time gaps to pole position
+- Head-to-head teammate comparisons
+
+Built using Python with FastF1 and Panel, this tool offers a comprehensive view of Formula 1 qualifying performances since 2018.
 
 ## Setup
 1. Clone repository:
@@ -45,7 +53,7 @@ python data_collection.py --years 2020 2021 2022 2023
 ```
 
 ### data_processing.py
-Processes the raw qualifying data and creates the career timeline dataset. Options:
+Processes the raw qualifying data and creates the career timeline dataset to be used in dashboard creation. Options:
 - `--input-dir`: Directory containing the raw CSV files (default: data)
 - `--output-dir`: Directory for processed output (default: data)
 - `--filename`: Name for the output file (default: career_timeline.json)
@@ -55,14 +63,8 @@ Example usage:
 python data_processing.py 
 ```
 
-Features:
-- Combines qualifying data from multiple years
-- Calculates gaps to pole position (P1 in qualifying)
-- Computes teammate comparisons
-- Generates season statistics
-
 ### dashboard.py
-Creates an interactive dashboard visualization.
+Creates an interactive dashboard visualization for driver career timeline.
 
 Example usage:
 ```bash
@@ -79,7 +81,7 @@ The interactive dashboard provides comprehensive qualifying analysis with severa
 - Teammate comparison metrics
 - Best qualifying achievements per season
 - Season summarization statistics
-- Detailed race-by-race event analysis
+- Specific qualifying session results 
 
 ### How to Navigate
 1. **Driver Selection**: Use the dropdown menu at the top of the screen to switch between drivers
@@ -96,4 +98,4 @@ The interactive dashboard provides comprehensive qualifying analysis with severa
 - Processed data is saved as career_timeline.json in the data directory
 - FastF1 cache is stored in f1_cache directory
 
-For more information about project goals, motivations, and background, see `ProjectProposal.pdf`
+For more information about project goals, background, and future work, see `WriteUp.pdf`
