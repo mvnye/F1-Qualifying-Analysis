@@ -1,5 +1,4 @@
 # F1 Qualifying Analysis
-
 This project analyzes Formula 1 qualifying data to create interactive visualizations of driver performances across seasons. By collecting and processing data from qualifying sessions, it provides insights into drivers' qualifying positions, gaps to pole position, and teammate comparisons. The resulting dashboard allows users to explore each driver's career timeline, analyze their performance trends, and examine specific qualifying sessions in detail. 
 
 The analysis focuses on key performance metrics including:
@@ -9,7 +8,20 @@ The analysis focuses on key performance metrics including:
 
 Built using Python with FastF1 and Panel, this tool offers a comprehensive view of Formula 1 qualifying performances since 2018.
 
-## Setup
+## Quick Start
+To view the pre-processed dashboard results directly:
+```bash
+git clone https://github.com/mvnye/F1-Qualifying-Analysis.git
+cd F1-Qualifying-Analysis
+pipenv shell
+pipenv install
+cd src
+python dashboard.py
+```
+
+## Full Setup (For Data Collection and Processing)
+If you want to collect and process new data:
+
 1. Clone repository:
 ```bash
 git clone https://github.com/mvnye/F1-Qualifying-Analysis.git
@@ -27,15 +39,13 @@ pipenv shell
 pipenv install
 ```
 
-4. Navegate to the src folder and run the data pipeline:
+4. Navigate to the src folder and run the data pipeline: 
 ```bash
 cd src
-python data_collection.py --years 2018 2019 2020 2021 2022 2023 2024 
+python data_collection.py --years 2018 2019 2020 2021 2022 2023 2024 --reload True
 python data_processing.py 
 python dashboard.py
 ```
-
-Note: The scripts will automatically create necessary directories.
 
 ## Scripts Overview
 The project consists of three main Python scripts:
