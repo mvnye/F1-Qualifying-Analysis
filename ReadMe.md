@@ -39,7 +39,7 @@ pipenv shell
 pipenv install
 ```
 
-4. Navigate to the src folder and run the data pipeline: 
+4. Navigate to the src folder and run the data pipeline:
 ```bash
 cd src
 python data_collection.py --years 2018 2019 2020 2021 2022 2023 2024 --reload True
