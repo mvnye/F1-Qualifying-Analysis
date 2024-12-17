@@ -45,7 +45,7 @@ python data_collection.py --years 2020 2021 2022 2023
 ```
 
 ### data_processing.py
-Processes the raw qualifying data and creates the career timeline dataset. Options:
+Processes the raw qualifying data and creates the career timeline dataset to be used in dashboard creation. Options:
 - `--input-dir`: Directory containing the raw CSV files (default: data)
 - `--output-dir`: Directory for processed output (default: data)
 - `--filename`: Name for the output file (default: career_timeline.json)
@@ -55,14 +55,8 @@ Example usage:
 python data_processing.py 
 ```
 
-Features:
-- Combines qualifying data from multiple years
-- Calculates gaps to pole position (P1 in qualifying)
-- Computes teammate comparisons
-- Generates season statistics
-
 ### dashboard.py
-Creates an interactive dashboard visualization.
+Creates an interactive dashboard visualization for driver career timeline.
 
 Example usage:
 ```bash
@@ -79,7 +73,7 @@ The interactive dashboard provides comprehensive qualifying analysis with severa
 - Teammate comparison metrics
 - Best qualifying achievements per season
 - Season summarization statistics
-- Detailed race-by-race event analysis
+- Specific qualifying session results 
 
 ### How to Navigate
 1. **Driver Selection**: Use the dropdown menu at the top of the screen to switch between drivers
