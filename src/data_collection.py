@@ -44,16 +44,30 @@ class F1DataFetcher:
 
         log_file = self.output_dir / 'data_collection.log'
     
-        logging.basicConfig(
-            level=logging.WARNING,  # show warnings and errors 
-            format='%(asctime)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler(log_file), # write to file 
-                logging.StreamHandler()  # show in console
-            ]
-        )
-
+        # Configure root logger
+        root_logger = logging.getLogger()
+        root_logger.setLevel(logging.WARNING)
+        
+        # Set format for logs
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        
+        # Configure file handler
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setFormatter(formatter)
+        
+        # Configure console handler
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        
+        # Suppress all other loggers
+        for logger_name in logging.root.manager.loggerDict:
+            logging.getLogger(logger_name).setLevel(logging.WARNING)
+        
+        # Create our specific logger
         self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.INFO)
+        self.logger.addHandler(file_handler)
+        self.logger.addHandler(console_handler)
     
     def _setup_fastf1(self)  -> None:
         """Initialize FastF1 with cache."""
