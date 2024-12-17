@@ -9,7 +9,7 @@ import argparse
 import gc
 import sys
 
-
+logging.getLogger('fastf1._api').setLevel(logging.ERROR)
 
 class F1DataFetcher:
     def __init__(self, cache_dir: str = 'f1_cache', 
