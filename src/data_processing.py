@@ -253,7 +253,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description='Process F1 Qualifying Data')
     parser.add_argument('--input-dir', default='../data', help='Directory for input files')
     parser.add_argument('--output-dir', default='../data', help='Directory for output files')
-    parser.add_argument('--filename', default='career_timeline_data_1032.json', help='Filename for the output')
+    parser.add_argument('--filename', default='career_timeline.json', help='Filename for the output')
     
     args = parser.parse_args()
     

@@ -283,7 +283,7 @@ def create_driver_timeline(timeline_data):
         }
     )
 
-career_timeline_data = pd.read_json('../data/career_timeline_data_final.json')
+career_timeline_data = pd.read_json('../data/career_timeline.json')
 
 dashboard = create_driver_timeline(career_timeline_data)
 dashboard.show()
