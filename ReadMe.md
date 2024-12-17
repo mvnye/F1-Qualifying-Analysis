@@ -1,5 +1,13 @@
 # F1 Qualifying Analysis
-For my final project I plan to focus on track-based and driver-based qualifying performance, I am currently working on code to obtain the track data.
+
+This project analyzes Formula 1 qualifying data to create interactive visualizations of driver performances across seasons. By collecting and processing data from qualifying sessions, it provides insights into drivers' qualifying positions, gaps to pole position, and teammate comparisons. The resulting dashboard allows users to explore each driver's career timeline, analyze their performance trends, and examine specific qualifying sessions in detail. 
+
+The analysis focuses on key performance metrics including:
+- Qualifying positions throughout seasons
+- Time gaps to pole position
+- Head-to-head teammate comparisons
+
+Built using Python with FastF1 and Panel, this tool offers a comprehensive view of Formula 1 qualifying performances since 2018.
 
 ## Setup
 1. Clone repository:
