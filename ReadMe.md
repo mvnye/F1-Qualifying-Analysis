@@ -30,8 +30,8 @@ pipenv install
 4. Run the data pipeline:
 ```bash
 cd src
-python data_collection.py --years 2023 2024 --output-dir data
-python data_processing.py --input-dir data --output-dir data
+python data_collection.py --years 2018 2019 2020 2021 2022 2023 2024 
+python data_processing.py 
 python dashboard.py
 ```
 
