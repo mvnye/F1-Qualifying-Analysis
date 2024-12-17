@@ -2,7 +2,7 @@ from panel.template import DarkTheme
 import panel as pn
 import pandas as pd
 import hvplot.pandas
-import json
+
 
 
 pn.extension(sizing_mode="stretch_width")
@@ -71,7 +71,7 @@ def create_driver_timeline(timeline_data: pd.DataFrame) -> pn.Column:
                     plot_data.append({
                         'driver': year_data['driver'],
                         'round': event['round'],
-                        'position': event['position'],
+                        'Position': event['position'],
                         'gapToPole': event.get('gapToPole', None),
                         'teammateGap': event.get('teammateGap', None),
                         'hasTeammateData': event.get('hasTeammateData', False)
@@ -91,8 +91,8 @@ def create_driver_timeline(timeline_data: pd.DataFrame) -> pn.Column:
             plot_df = plot_df.sort_values('round')
             complete_df = complete_df.sort_values('round')
 
-            plot_df['round_numeric'] = plot_df['round'].cat.codes
-            complete_df['round_numeric'] = complete_df['round'].cat.codes
+            plot_df['RoundNumber'] = plot_df['round'].cat.codes
+            complete_df['RoundNumber'] = complete_df['round'].cat.codes
             
             complete_df['round'] = pd.Categorical(
                 complete_df['round'],
@@ -101,7 +101,8 @@ def create_driver_timeline(timeline_data: pd.DataFrame) -> pn.Column:
             )
             
             complete_df = complete_df.sort_values('round')
-            
+           
+
             year_marker = pn.pane.Markdown(
                 f"<h1>{year_data['year']}</h1>",
                 styles={
@@ -114,46 +115,46 @@ def create_driver_timeline(timeline_data: pd.DataFrame) -> pn.Column:
                     'cursor': 'default'
                 }
             )
+        
 
             scatter_plot = (plot_df.hvplot.line(
-                'round_numeric', 'position',
+                'RoundNumber', 'Position',
                 color='#dc3545',
                 alpha=0.3,
-                line_width=2
+                line_width=2,
             ) * complete_df.hvplot.scatter(
-                'round_numeric', 'position',
+                'RoundNumber', 'Position',
                 size=30,
-                color='#dc3545',
-                hover_cols=['round', 'gapToPole', 'teammateGap']
+                color='#dc3545' ,
             )).opts(
                 padding=0.1,
                 show_grid=True,
                 fontsize={'labels': 14, 'xticks': 12, 'yticks': 12, 'title': 20},
                 xrotation=45,
                 margin=(50,50,100,50),
-                tools=['hover', 'box_zoom', 'reset'],
+                tools=['box_zoom', 'reset'],
                 xlabel='Qualifying Event',
                 ylabel='Qualifying Position',
                 width=1500,
                 height=400,
                 bgcolor='#f8f9fa',
                 axiswise=True,
-                ylim=(20,0)
+                ylim=(20,0),
             )
 
             scatter_plot = scatter_plot.opts(
                 xticks=[(i, race) for i, race in enumerate(plot_df['round'].tolist())], 
-                xlabel='Qualifying Event'
+                xlabel='Qualifying Event',
             )
 
-            valid_pos_df = plot_df.dropna(subset=['position'])
-            best_position = valid_pos_df['position'].min() if not valid_pos_df.empty else "N/A"
-            best_races = valid_pos_df[valid_pos_df['position'] == best_position]['round'].tolist() if not valid_pos_df.empty else []
+            valid_pos_df = plot_df.dropna(subset=['Position'])
+            best_position = valid_pos_df['Position'].min() if not valid_pos_df.empty else "N/A"
+            best_races = valid_pos_df[valid_pos_df['Position'] == best_position]['round'].tolist() if not valid_pos_df.empty else []
             
             header = pn.Column(
                 pn.Row(
                     pn.pane.Markdown(
-                        f"🏆 **Best Position:** P{best_position:.0f}" if best_position != "N/A" else "🏆 **Best Position:** N/A",
+                        f"🏆 **Best Qualifying Position:** P{best_position:.0f}" if best_position != "N/A" else "🏆 **Best Position:** N/A",
                         styles={'font-size': '18px', 'background': '#fff', 'padding': '10px', 'border-radius': '8px', 'border': '1px solid #dee2e6'}
                     ),
                     pn.pane.Markdown(
@@ -211,9 +212,9 @@ def create_driver_timeline(timeline_data: pd.DataFrame) -> pn.Column:
                 filtered_race_data = complete_df[complete_df['round'] == selected_round]
                 event_title.object = f"**Showing Specific Event Details For:** {selected_round}"
                 
-                if not filtered_race_data.empty and not filtered_race_data['position'].isna().all():
+                if not filtered_race_data.empty and not filtered_race_data['Position'].isna().all():
                     race_data = filtered_race_data.iloc[0]
-                    position = f"P{race_data['position']:.0f}"
+                    position = f"P{race_data['Position']:.0f}"
                     pole_gap = f"+{race_data['gapToPole']:.3f}s" if pd.notna(race_data['gapToPole']) else "No Data"
                     teammate_gap = f"{race_data['teammateGap']:+.3f}s" if race_data['hasTeammateData'] else "No Teammate Data"
                 else:
