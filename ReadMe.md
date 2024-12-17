@@ -13,11 +13,11 @@ Built using Python with FastF1 and Panel, this tool offers a comprehensive view 
 1. Clone repository:
 ```bash
 git clone https://github.com/mvnye/F1-Qualifying-Analysis.git
-cd F1-Qualifying-Analysis
 ```
 
-2. Install pipenv if not already installed:
+2. Navigate to the repository and install pipenv if not already installed:
 ```bash
+cd F1-Qualifying-Analysis
 pip install pipenv
 ```
 
@@ -27,7 +27,7 @@ pipenv shell
 pipenv install
 ```
 
-4. Run the data pipeline:
+4. Navegate to the src folder and run the data pipeline:
 ```bash
 cd src
 python data_collection.py --years 2018 2019 2020 2021 2022 2023 2024 
