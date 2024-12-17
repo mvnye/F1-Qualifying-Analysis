@@ -9,7 +9,7 @@ import argparse
 import gc
 import sys
 
-#using data drom session.results
+
 
 class F1DataFetcher:
     def __init__(self, cache_dir: str = 'f1_cache', 
@@ -41,13 +41,14 @@ class F1DataFetcher:
         
     def _setup_logging(self) -> None:
         """Configure logging for errors."""
+
         log_file = self.output_dir / 'data_collection.log'
     
         logging.basicConfig(
             level=logging.WARNING,  # show warnings and errors 
             format='%(asctime)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(log_file), #write to file 
+                logging.FileHandler(log_file), # write to file 
                 logging.StreamHandler()  # show in console
             ]
         )
@@ -56,13 +57,14 @@ class F1DataFetcher:
     
     def _setup_fastf1(self)  -> None:
         """Initialize FastF1 with cache."""
+
         try:
             fastf1.Cache.enable_cache(str(self.cache_dir))
         except Exception as e:
             self.logger.error(f"Failed to initialize FastF1 cache: {e}")
             sys.exit(1)
     
-    def fetch_qualifying_data(self, years) -> dict:
+    def fetch_qualifying_data(self, years: list[int]) -> dict[str, list[int]]:
         """
         Fetch qualifying data for specified years.
         
@@ -146,7 +148,7 @@ class F1DataFetcher:
                     self.logger.error(f"Failed to get {year} schedule: {str(e)}")
                     return None
     
-    def _process_year_events(self, year: int, schedule: pd.DataFrame) -> list:
+    def _process_year_events(self, year: int, schedule: pd.DataFrame) -> list[pd.DataFrame]:
         """
         Process all events for a given year.
         
@@ -157,17 +159,14 @@ class F1DataFetcher:
         Returns:
             list: List of DataFrames containing event data
         """
+
         yearly_data = []
 
         for _, event in schedule.iterrows():
             try:
                 time.sleep(5)  # attempt at rate limiting 
-    
-                #session = fastf1.get_session(year, event['EventName'], 'Q')
-                #session.load()
                 
                 session = fastf1.get_session(year, event['EventName'], 'Q')
-                #session.load(laps=False, telemetry=False, weather=True, messages=False)
                 session.load()
 
                 laps = session.laps 
@@ -198,6 +197,7 @@ class F1DataFetcher:
         return yearly_data
 def main() -> None:
     """Main function to run the F1 data fetcher."""
+
     parser = argparse.ArgumentParser(description='Fetch F1 Quali Data')
     parser.add_argument('--years', nargs='+', type=int, required=True,
                       help='Years to fetch data for')
@@ -205,7 +205,7 @@ def main() -> None:
                       help='Directory for FastF1 cache')
     parser.add_argument('--output-dir', default='../data',
                       help='Directory for output files')
-    parser.add_argument('--reload', default= False,
+    parser.add_argument('--reload', type=bool, default= False,
                       help='Reload existing data')
     
     args = parser.parse_args()

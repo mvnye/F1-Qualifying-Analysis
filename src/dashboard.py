@@ -4,11 +4,21 @@ import pandas as pd
 import hvplot.pandas
 import json
 
-# Set up theme and styling
+
 pn.extension(sizing_mode="stretch_width")
 pn.config.sizing_mode = "stretch_width"
 
-def create_driver_timeline(timeline_data):
+def create_driver_timeline(timeline_data: pd.DataFrame) -> pn.Column:
+    """
+    Create an interactive driver timeline dashboard.
+    
+    Args:
+        timeline_data: DataFrame containing driver career data
+        
+    Returns:
+        Panel Column containing the complete dashboard
+    """
+
     df = pd.DataFrame(timeline_data)
     all_drivers = sorted(df['driver'].unique().tolist())
     
@@ -26,14 +36,33 @@ def create_driver_timeline(timeline_data):
         }
     )
     
-    def create_timeline(driver):
+    def create_timeline(driver: str) -> pn.Column:
+        """
+        Create timeline visualization for a specific driver.
+
+        Args:
+            driver: Name of the driver to visualize
+            
+        Returns:
+            Panel Column containing the driver's timeline
+        """
+
         if not driver:
             return pn.Column(
                 pn.pane.Markdown("Please select a driver", styles={'font-family': 'Inter, sans-serif'})
             )
         
-        def create_year_panel(year_data):
-            # Create a new DataFrame specifically for plotting
+        def create_year_panel(year_data: pd.Series) -> pn.Column:
+            """
+            Create panel visualization for a specific year.
+            
+            Args:
+                year_data: Series containing driver data for one year
+                
+            Returns:
+                Panel Column containing the year's visualization
+            """
+            
             plot_data = []
             events = year_data['events']
             
@@ -51,17 +80,13 @@ def create_driver_timeline(timeline_data):
             plot_df = pd.DataFrame(plot_data)
             plot_df['round'] = pd.Categorical(plot_df['round'], categories=plot_df['round'].tolist(), ordered=True)
             
-            # Get the ordered race list for this year
-            #year = str(year_data['year'])
             all_races = [event['round'] for event in events if 'round' in event]
             
-            # Create complete DataFrame with all races
             complete_df = pd.DataFrame({'round': all_races})
             complete_df['round'] = pd.Categorical(complete_df['round'], categories=plot_df['round'].tolist(), ordered=True)
             
-            # Merge with plot data while maintaining race order
             complete_df = complete_df.merge(plot_df, on='round', how='left')
-            #print()
+
 
             plot_df = plot_df.sort_values('round')
             complete_df = complete_df.sort_values('round')
@@ -69,18 +94,15 @@ def create_driver_timeline(timeline_data):
             plot_df['round_numeric'] = plot_df['round'].cat.codes
             complete_df['round_numeric'] = complete_df['round'].cat.codes
             
-            # Create categorical type with correct order
             complete_df['round'] = pd.Categorical(
                 complete_df['round'],
                 categories=all_races,
                 ordered=True
             )
             
-            # Sort by the ordered categories
             complete_df = complete_df.sort_values('round')
             
             year_marker = pn.pane.Markdown(
-                #f"## {year_data['year']}", 
                 f"<h1>{year_data['year']}</h1>",
                 styles={
                     'margin-bottom': '15px',
@@ -120,7 +142,7 @@ def create_driver_timeline(timeline_data):
             )
 
             scatter_plot = scatter_plot.opts(
-                xticks=[(i, race) for i, race in enumerate(plot_df['round'].tolist())],  # Add race names as xticks
+                xticks=[(i, race) for i, race in enumerate(plot_df['round'].tolist())], 
                 xlabel='Qualifying Event'
             )
 
@@ -177,7 +199,14 @@ def create_driver_timeline(timeline_data):
                 }
             )
 
-            def update_race_details(event):
+            def update_race_details(event: None) -> None:
+                """
+                Update race details panel based on selected race.
+                
+                Args:
+                    event: Panel event trigger (not used)
+                """
+
                 selected_round = race_selector.value
                 filtered_race_data = complete_df[complete_df['round'] == selected_round]
                 event_title.object = f"**Showing Specific Event Details For:** {selected_round}"
@@ -252,7 +281,6 @@ def create_driver_timeline(timeline_data):
         
         return pn.Column(
             pn.pane.Markdown(
-                #f"# {driver}'s Performance Timeline",
                 f"<h1>{driver}'s Performance Timeline</h1>",
                 styles={
                     'font-size': '36px',

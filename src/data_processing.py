@@ -7,20 +7,21 @@ import argparse
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Previous helper functions remain the same until process_qualifying_data
+
 def combine_csv_files(folder_path: str | Path) -> pd.DataFrame | None:
     """
     Read all CSV files from a folder and combine them into a single DataFrame.
     
-    Parameters:
-    folder_path (str): Path to the folder containing CSV files
-    
+    Args:
+        folder_path: Path to the folder containing CSV files
+        
     Returns:
-    pandas.DataFrame: Combined DataFrame from all CSV files
-
+        Combined DataFrame from all CSV files or None if no files found
+        
     Raises:
         FileNotFoundError: If the folder path doesn't exist
     """
+
     path = Path(folder_path)
     all_dfs = []
     
@@ -42,7 +43,16 @@ def combine_csv_files(folder_path: str | Path) -> pd.DataFrame | None:
         return None
 
 def convert_time(df: pd.DataFrame) -> pd.DataFrame:
-    """Convert time columns to timedelta and seconds."""
+    """
+    Convert time columns to timedelta and seconds.
+    
+    Args:
+        df: DataFrame with time columns
+        
+    Returns:
+        DataFrame with converted time columns
+    """
+
     df['Q1'] = pd.to_timedelta(df['Q1'])
     df['Q2'] = pd.to_timedelta(df['Q2'])
     df['Q3'] = pd.to_timedelta(df['Q3'])
@@ -54,7 +64,16 @@ def convert_time(df: pd.DataFrame) -> pd.DataFrame:
     return df 
 
 def get_best_time(driver_data: pd.Series) -> float | None:
-    """Get best qualifying time from Q1, Q2, or Q3."""
+    """
+    Get best qualifying time from Q1, Q2, or Q3.
+
+    Args:
+        driver_data: Series containing driver's qualifying times
+        
+    Returns:
+        Best qualifying time or None if no valid times
+    """
+
     if pd.notna(driver_data.get('Q3Seconds')):
         return driver_data['Q3Seconds']
     elif pd.notna(driver_data.get('Q2Seconds')):
@@ -64,7 +83,18 @@ def get_best_time(driver_data: pd.Series) -> float | None:
     return None
 
 def calculate_gap_to_pole(position: float, best_time: float | None, pole_time: float) -> float:
-    """Calculate gap to pole position."""
+    """
+    Calculate gap to pole position.
+
+    Args:
+        position: Qualifying position
+        best_time: Driver's best qualifying time
+        pole_time: Pole position time
+        
+    Returns:
+        Gap to pole in seconds
+    """
+
     if pd.isna(position):
         return np.nan
     elif position == 1:
@@ -74,7 +104,19 @@ def calculate_gap_to_pole(position: float, best_time: float | None, pole_time: f
     return best_time - pole_time
 
 def create_event_summary(event_name: str, position: float, gap_to_pole: float, teammate_gap: float) -> dict:
-    """Create event summary dictionary."""
+    """
+    Create event summary dictionary.
+
+    Args:
+        event_name: Name of the event
+        position: Qualifying position
+        gap_to_pole: Gap to pole position
+        teammate_gap: Gap to teammate
+        
+    Returns:
+        Dictionary with event summary data
+    """
+
     return {
         'round': event_name,
         'position': position,
@@ -84,7 +126,18 @@ def create_event_summary(event_name: str, position: float, gap_to_pole: float, t
     }
 
 def create_driver_entry(year: int, driver: str, team: str) -> dict:
-    """Create initial driver entry dictionary."""
+    """
+    Create initial driver entry dictionary.
+
+    Args:
+        year: Season year
+        driver: Driver name
+        team: Team name
+        
+    Returns:
+        Dictionary with initial driver data
+    """
+
     return {
         'year': year,
         'driver': driver,
@@ -97,8 +150,17 @@ def create_driver_entry(year: int, driver: str, team: str) -> dict:
         'totalEvents': 0
     }
 
-def calculate_teammate_gaps(team_data: pd.DataFrame) -> dict:
-    """Calculate gaps between teammates."""
+def calculate_teammate_gaps(team_data: pd.DataFrame) -> dict[str, float]:
+    """
+    Calculate gaps between teammates.
+    
+    Args:
+        team_data: DataFrame containing team qualifying data
+        
+    Returns:
+        Dictionary mapping driver names to time gaps with teammates
+    """
+    
     drivers = team_data['BroadcastName'].unique()
     gaps: dict = {driver: np.nan for driver in drivers}
     
@@ -119,10 +181,9 @@ def calculate_teammate_gaps(team_data: pd.DataFrame) -> dict:
     
     return gaps
 
-def process_qualifying_data(quali_data: pd.DataFrame) -> list:
+def process_qualifying_data(quali_data: pd.DataFrame) -> list[dict]:
     """
     Process qualifying data to create a timeline of driver performances.
-    Include all events in a season for each driver, with NaN values for missed events.
     
     Args:
         quali_data: DataFrame containing qualifying session data
@@ -133,6 +194,7 @@ def process_qualifying_data(quali_data: pd.DataFrame) -> list:
     Raises:
         ValueError: If required columns are missing from the input DataFrame
     """
+
     logger.info("Processing qualifying data...")
     timeline_data: list = []
     
@@ -146,7 +208,7 @@ def process_qualifying_data(quali_data: pd.DataFrame) -> list:
     if missing_columns:
         raise ValueError(f"Missing required columns: {missing_columns}")
     
-    # First, create a mapping of drivers to their teams for each year
+    
     driver_team_mapping = {}
     for year in quali_data['Year'].unique():
         year_data = quali_data[quali_data['Year'] == year]
@@ -158,10 +220,9 @@ def process_qualifying_data(quali_data: pd.DataFrame) -> list:
     for year in quali_data['Year'].unique():
         logger.info(f"Processing year: {year}")
         year_data = quali_data[quali_data['Year'] == year]
-        #all_events = sorted(year_data['EventName'].unique())
+        
         all_events = year_data['EventName'].unique()
         
-        # Create entries for all drivers who participated in any event this year
         year_drivers = set(year_data['BroadcastName'].unique())
         
         for driver in year_drivers:
